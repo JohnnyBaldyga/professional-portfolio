@@ -1,0 +1,31 @@
+.homepage-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 1px solid #ddd; /* Vertical line */
+  padding: 20px;
+}
+
+.image-container {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 200px; /* Adjust as needed */
+  height: auto;
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+.text-container {
+  flex: 2;
+}
+
+.text-container h2 {
+  margin-top: 0;
+}
+
+.text-container p {
+  margin: 0;
+}

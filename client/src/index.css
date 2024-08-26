@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Header component */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+header h1 {
+  position: relative;
+  left: 130px;
+  color: white;
+  margin: 0;
+  font-size: 2rem;
+  margin: 0;
+  font-size: 2rem;
+  font-family: "Arial", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.highlight {
+  color: orangered;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/* Main Component */
+h2,
+h3,
+p {
+  color: black;
+}
+
+section {
+}
+.content {
+  padding: 2rem;
+}
+
+.error {
+  color: red;
+}
+
+/* Footer Component */
+footer {
+  background-color: #333;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ddd;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    padding: 0.5rem;
+  }
+
+  footer {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .content {
+    padding: 0.5rem;
+  }
+
+  .portfolio-item {
+    padding: 0.5rem;
+  }
+  .portfolio-item img {
+    max-width: 80px;
+  }
+  footer {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+}
