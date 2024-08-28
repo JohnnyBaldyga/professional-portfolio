@@ -1,8 +1,8 @@
-.homepage-container {
+/* .homepage-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-left: 1px solid #ddd; /* Vertical line */
+  border-left: 1px solid #ddd; 
   padding: 20px;
 }
 
@@ -13,9 +13,9 @@
 
 .image-container img {
   width: 100%;
-  max-width: 200px; /* Adjust as needed */
+  max-width: 200px; 
   height: auto;
-  border-radius: 8px; /* Optional: rounded corners */
+  border-radius: 8px; 
 }
 
 .text-container {
@@ -28,4 +28,30 @@
 
 .text-container p {
   margin: 0;
+} */
+
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-container img {
+  max-width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.text-container {
+  text-align: center;
+  max-width: 600px;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.button-container button {
+  margin-right: 10px;
 }

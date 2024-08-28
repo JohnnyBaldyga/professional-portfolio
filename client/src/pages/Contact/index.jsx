@@ -82,6 +82,10 @@ function Contact() {
           Send
         </Button>
       </Box>
+      <Typography variant="body1" component="p" sx={{ mt: 4 }}>
+        Or just contact me at{" "}
+        <a href="mailto:JonathanBaldyga@gmail.com">JonathanBaldyga@gmail.com</a>
+      </Typography>
     </section>
   );
 }

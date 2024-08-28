@@ -5,7 +5,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./index.css";
-import "./transition.css"; // Import the transitions CSS
+import "./transition.css";
 
 // Theme Provider for MUI
 const theme = createTheme();
@@ -16,13 +16,12 @@ function App() {
   const [transitionClass, setTransitionClass] = useState("active-page");
 
   useEffect(() => {
-    // On route change, set exit class and then active class
     setTransitionClass("exit-page");
 
     const timeoutId = setTimeout(() => {
       setCurrentKey(location.pathname);
       setTransitionClass("active-page");
-    }, 500); // Match this duration with your transition duration
+    }, 500);
 
     return () => clearTimeout(timeoutId);
   }, [location.pathname]);
